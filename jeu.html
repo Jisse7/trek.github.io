@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Jeu | LAROUTE</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="jeu.css">
+    <link rel="icon" type="image/png" href="images/air-balloon4.png">
+</head>
+<body>
+<div class="lbg"> 
+        <div class="container">
+       <h3>Mon chiffre est un chiffre entre 1 et 10. </h3>
+       <h3>Vas-y, essaie de deviner mon chiffre!</h3>
+
+       <input type="text" placeholder="?" id="guess"><br>
+       <button onclick="play()" class="jouer" id="bouton_esssai">J'essaie!</button>
+
+       <p id="ligne1_Nombre_D'essai">Nombre d'essais : 0</p>
+       <p id="ligne2_Nombre_de_choix">Nombre de choix incorrect : Aucun</p>
+       <p id="ligne3_Les_choix"></p>
+
+
+<!-- bouton rejouer -->
+       <button onclick="location.reload()" class="rejouer" id="bouton_rejouer">Rejouer</button>
+ </div>
+</div> 
+   <!--Script-->
+   <script src="jeu.js"></script>
+</body>
+</html>
